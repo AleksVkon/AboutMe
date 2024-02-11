@@ -54,9 +54,10 @@ final class LoginViewController: UIViewController, UITextFieldDelegate {
         let welcomVC = segue.destination as? WelcomeViewController
         welcomVC?.welcomeUserName = userNameTextField.text ?? ""
     }
-    
-    @IBAction func unwind(for segue: UIStoryboardSegue) {
-    }
+//    
+//    @IBAction func unwind(for segue: UIStoryboardSegue) {
+//    }
+//    так и не понял как реализовать возврат на первый экран.
     
     private func showAlert(withTitle title: String, andMessage message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
